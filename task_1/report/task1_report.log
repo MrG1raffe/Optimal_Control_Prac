@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.5)  18 FEB 2020 00:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.5)  18 FEB 2020 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -498,16 +498,13 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2]
-Overfull \hbox (13.7652pt too wide) in paragraph at lines 103--105
-[]\T2A/cmr/m/n/10.95 ƒл€ про-вер-ки пунк-тов тео-ре-мы необ-хо-ди-мо знать опор
--ные функ-ции мно-жеств $\OMS/cmsy/m/n/10.95 X[]\OML/cmm/m/it/10.95 ;  \OMS/cms
-y/m/n/10.95 X[]\OML/cmm/m/it/10.95 ;  \OMS/cmsy/m/n/10.95 P$\T2A/cmr/m/n/10.95 
-,
+) [2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--142
 
  []
 
@@ -519,48 +516,48 @@ Package epstopdf Info: Source file: <P_set.eps>
 (epstopdf)                    size: 51850 bytes
 (epstopdf)             Command: <repstopdf --outfile=P_set-eps-converted-to.pdf
  P_set.eps>
-(epstopdf)             \includegraphics on input line 125.
+(epstopdf)             \includegraphics on input line 144.
 Package epstopdf Info: Output file is already uptodate.
 <P_set-eps-converted-to.pdf, id=35, 421.575pt x 316.18124pt>
 File: P_set-eps-converted-to.pdf Graphic file (type pdf)
 <use P_set-eps-converted-to.pdf>
-Package pdftex.def Info: P_set-eps-converted-to.pdf  used on input line 125.
+Package pdftex.def Info: P_set-eps-converted-to.pdf  used on input line 144.
 (pdftex.def)             Requested size: 189.68768pt x 142.26378pt.
 
-Overfull \hbox (47.4239pt too wide) in paragraph at lines 125--125
+Overfull \hbox (47.4239pt too wide) in paragraph at lines 144--144
 [][] 
  []
 
-[4 <./P_set-eps-converted-to.pdf>] (./task1_report.aux) ) 
+[4 <./P_set-eps-converted-to.pdf>] [5] [6] (./task1_report.aux) ) 
 Here is how much of TeX's memory you used:
- 3723 strings out of 492615
- 47317 string characters out of 6131390
- 126325 words of memory out of 5000000
- 7549 multiletter control sequences out of 15000+600000
+ 3726 strings out of 492615
+ 47338 string characters out of 6131390
+ 124346 words of memory out of 5000000
+ 7552 multiletter control sequences out of 15000+600000
  19737 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,27p,467b,176s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/font
-s/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx
-2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
-200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfti1200.pfb>
-Output written on task1_report.pdf (4 pages, 280243 bytes).
+ 41i,10n,27p,569b,176s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/te
+xmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfti1200.pfb>
+Output written on task1_report.pdf (6 pages, 286782 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
