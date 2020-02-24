@@ -9,6 +9,7 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{floatflt}
+\usepackage{multicol}
 
 \newtheorem{Th}{Теорема}
 
@@ -16,9 +17,13 @@
 \newcommand\PS{\mathcal{P}}
 \newcommand\X{\mathcal{X}} 
 \newcommand\Sup[2]{\rho( #1 \, | \, #2 )}
-\newcommand\Conv[1]{{\rm conv}\{ #1 \}}
+\newcommand\Cl[2]{\begin{bmatrix}
+#1 \\ #2
+\end{bmatrix}}
+\newcommand\Conv[1]{{\rm conv}\left\{ #1 \right\}}
 \newcommand\Sgn{{\rm sgn \,}}
 \DeclareMathOperator*{\Argmax}{Argmax}
+\DeclareMathOperator{\Ker}{Ker}
 
 \begin{document}
 
@@ -86,7 +91,7 @@ $$ \PS = \left\{ x \in \Real^2 \colon \ x_1^2 + a x_2^2 \leq b, \ ax_1^2 + x_2^2
 \newpage
 \section{Принцип максимума Понтрягина}
 Решение задачи опирается на принцип максимума Понтрягина для линейных систем~\cite{rublev}.
-\begin{Th}[Принцип максимума Понтрягина] 
+\begin{Th}[Принцип максимума Понтрягина] \label{PMP}
 Пусть $(x^*(\cdot), \ u^*(\cdot))$ --- оптимальная пара, $t_1^*$ --- соответствующее ей время перемещения. Тогда существует дифференцируемая функция 
 $\psi(\cdot) \not\equiv 0$, для которой выполнено
 \begin{enumerate}
@@ -171,11 +176,344 @@ $$\ x_1^* = \frac{l_1\sqrt{ab}}{\sqrt{al_1^2+l_2^2}},\  x_2^* = \sqrt{\frac{b}{a
 \right.
 \end{equation}
 
+\newpage
+\part{Практическая часть}
+\setcounter{section}{0}
+\section{Описание алгоритма}
+
+Для поиска оптимальной траектории используется перебор по функциям, удовлетворяющим принципу
+максимума, которые параметризованы одним числом --- углом вектора $\psi^0$, лежащего на 
+единичной окружности.
+
+Предполагается, что матрица $B$ является невырожденной, в противном случае будем добавлять к ней
+незначительные случайные изменения до тех пор, пока ее определитель не станет больше некоторого
+заданного числа $\epsilon_B$. Таким образом, $\Ker B = \{0\}$.
+
+Отметим также, что сопряженная переменная $\psi(t) \not= 0, \quad \forall t \ge 0$.
+ Это следует из единственности решения задачи Коши и требования $\psi(\cdot) \not\equiv 0$ 
+ принципа максимума.
+
+Ниже приведены шаги алгоритма вычисления субоптимальной пары.
+
+\begin{itemize}
+\item Создание равномерной сетки значений $\psi^0 = \psi(0)$ на окружности и численное решение
+задачи Коши для сопряженной системы 
+
+\begin{equation}
+\left\{
+	\begin{aligned}
+	& \dot{\psi}(t) = -A^T\psi(t), \ t \in [0, 1], \\
+	& \psi(0) = \psi^0
+	\end{aligned}	
+\right.
+\end{equation}
+с помощью функции ode45 на некоторой временной сетке.
+
+\item В каждом узле сетки вычислим значение управления, пользуясь пунктом \textit{1.} принципа
+ максимума: $u(t)$ является опорным вектором множества $\PS$ по направлению $B^T\psi(t) \not= 0$.
+Опорный вектор этого множества был вычислен аналитически в прошлом разделе и определен однозначно.
+
+\item Из условия трансверсальности \textit{2.} найдем начальную точку $x^0 = x(0)$ которая является
+опорным вектором к $\X_0$ по направлению $\psi^0$ и также определена однозначно.
+
+\item Зная начальное условие и управление, найдем траекторию $x[t]$, решая задачу Коши
+\begin{equation}
+\left\{
+	\begin{aligned}
+	& \dot{x}(t) = Ax(t) + Bu(t) + f, \ t \in [0, 1], \\
+	& x(0) = x^0
+	\end{aligned}	
+\right.
+\end{equation}
+
+Получили, что каждому значению $\psi^0$ соответсвует единственная пара $(u(t), \ x(t))$, 
+удовлетворяющая принципу максимума Понтрягина.
+\item Численно проверим попадание траектории в терминальное множество, пользуясь свойством
+\begin{equation}
+x \in \X_1 \Leftrightarrow \langle l, \ x \rangle \le \Sup{l}{X_1}, \quad \forall l \colon \|l\| = 1.
+\end{equation}
+
+При попадании траектории в $\X_1$ установим значение $t_1^*$, далее которого вычисления других
+ траекторий производиться не будут. Таким образом, к концу перебора $t_1^*$ будет равно минимальному
+ времени перемещения для перебираемых траекторий, а соответствующая траектория, на которой достигается
+ это значение, будет субоптимальной.
+ 
+\item Если же ни одна из траекторий не попала в терминальное множество, продолжим их на отрезок
+$[1, \, 2]$ и выполним аналогичные действия. Вычисления продолжаются до тех пор, пока $t \le t_{max}$,
+где $t_{max}$ --- заранее задаванный параметр алгоритма. Если к этому времени ни одна из траекторий
+не достигла $\X_1$, считаем, что задача не имеет решения.
+
+\end{itemize}
+
+\newpage
+\section{Проверка условия трансверсальности}
+В описанном алгоритме никак не было задействовано условие трансверсальности \textit{3.} теоремы 
+\ref{PMP}. Так как оптимальное управление удовлетворяет всем трем пунктам теоремы, найденное
+решение также должно им удовлетворять, и пункт \textit{3.} можно использовать для оценки
+погрешности (если условие трансверсальности не выполнено, найденное управление не может быть
+оптимальным).
+
+Для найденной траектории $x^*[\cdot]$ численно найдем направление $l$, по которому вектор 
+$x^*(t_1^*)$ будет  опорным для множества $\X_1$. Поскольку граница множества $\X_1$ гладкая, 
+такой вектор определен однозначно. Условие трасверсальности означает, что конечная точка траектории
+является опорным вектором для $\X_1$ по направлению $-\psi(t_1^*)$. В случае идеального выполения
+условия направление $l$ совпадет с $-\psi(t_1^*)$, поэтому угол между этими двумя векторами будем
+использовать как меру <<неоптимальности>> полученного решения.
+
+\newpage
+\section{Локализация и уточнение вычислений}
+
+При большой ошибке в условии трансверсальности \textit{3.} рассматривается более мелкая сетка для
+параметра $\psi^0$, охватывающая меньший угол, чем на предыдущей итерации, и симметричная относительно
+$\psi^0_*$ --- оптимального параметра на прошлой итерации.
+
+Последовательное уточнение происходит до тех пор, пока ошибка в условии трансверсальности не 
+станет достаточно маленькой.
+
+\newpage
+\section{Примеры работы программы}
+
+\paragraph{Пример 1\\}
+
+\begin{equation}
+A = \frac1{10}\begin{bmatrix}
+1 & 0 \\ 1 & 1
+\end{bmatrix},\ 
+B = \begin{bmatrix}
+10 & 0 \\ 0 & 10
+\end{bmatrix}, \
+f = \begin{bmatrix}
+1 \\ 1
+\end{bmatrix}.
+\end{equation}
+
+$$\X_0 = \mathbb{B}\left(\Cl{-4}{7}, 1\right).$$
+$$\X_1 = \Conv{\Cl{9}{3}, \Cl{7}{4}, \Cl{11}{5}, \Cl{10}{8}, \Cl{8}{8}} + \mathbb{B}(0, 1)$$
+$$\PS = \{u\colon 2u_1^2 + u_2^2 \le 1, \ u_1^2 + 2u_2^2 \le 1 \}$$
+
+За одну итерацию работы программы значения функционала 
+$$t_1^* = 1.1790,$$
+а ошибка условия трансверсальности равна $0.0687^\circ$.
+
+\newpage
+\begin{figure}[h]
+\begin{multicols}{3}
+	\hfill
+	\includegraphics[width=45mm]{1xx.eps}
+	\hfill
+	\caption{График $(x_1, \, x_2)$}
+	\hfill
+	\includegraphics[width=45mm]{1tx1.eps}
+	\hfill
+	\caption{График $(t, \, x_1)$}
+    \hfill
+	\includegraphics[width=45mm]{1tx2.eps}
+	\hfill
+	\caption{График $(t, \, x_2)$}
+\end{multicols}
+\end{figure}		
+
+\begin{figure}[h]
+\begin{multicols}{3}
+	\hfill
+	\includegraphics[width=45mm]{1uu.eps}
+	\hfill
+	\caption{График $(u_1, \, u_2)$}
+	\hfill
+	\includegraphics[width=45mm]{1tu1.eps}
+	\hfill
+	\caption{График $(t, \, u_1)$}
+    \hfill
+	\includegraphics[width=45mm]{1tu2.eps}
+	\hfill
+	\caption{График $(t, \, u_2)$}
+\end{multicols}
+\end{figure}		
+
+
+\begin{figure}[h]
+\begin{multicols}{3}
+	\hfill
+	\includegraphics[width=45mm]{1pp.eps}
+	\hfill
+	\caption{График $(\psi_1, \, \psi_2)$}
+	\hfill
+	\includegraphics[width=45mm]{1tp1.eps}
+	\hfill
+	\caption{График $(t, \, \psi_1)$}
+    \hfill
+	\includegraphics[width=45mm]{1tp2.eps}
+	\hfill
+	\caption{График $(t, \, \psi_2)$}
+\end{multicols}
+\end{figure}		
+
+\newpage
+\paragraph{Пример 2\\}
+\begin{equation}
+A = \frac1{10}\begin{bmatrix}
+2 & -2 \\ 2 & 2
+\end{bmatrix},\ 
+B = \frac13\begin{bmatrix}
+1 & 1 \\ 2 & 0
+\end{bmatrix}, \
+f = \begin{bmatrix}
+0 \\ 0
+\end{bmatrix}.
+\end{equation}
+
+$$\X_0 = \mathbb{B}\left(\Cl{0}{-1}, 1\right).$$
+$$\X_1 = \Conv{\Cl{0}{10}} + \mathbb{B}(0, 1)$$
+$$\PS = \{u\colon u_1^2 + u_2^2 \le 1\}$$
+
+
+За одну итерацию работы программы значения функционала 
+$$t_1^* = 1.0390,$$
+а ошибка условия трансверсальности равна $19.7232^\circ$.
+
+\begin{center}
+\includegraphics[width=90mm]{2xx_it1.eps}
+\end{center}
+
+После второй итерации
+$$ t_1^* = 1.0370, $$
+и ошибка $2.3975^\circ$.
+
+
+\newpage
+\begin{figure}[h]
+\begin{multicols}{3}
+	\hfill
+	\includegraphics[width=45mm]{2xx.eps}
+	\hfill
+	\caption{График $(x_1, \, x_2)$}
+	\hfill
+	\includegraphics[width=45mm]{2tx1.eps}
+	\hfill
+	\caption{График $(t, \, x_1)$}
+    \hfill
+	\includegraphics[width=45mm]{2tx2.eps}
+	\hfill
+	\caption{График $(t, \, x_2)$}
+\end{multicols}
+\end{figure}		
+
+\begin{figure}[h]
+\begin{multicols}{3}
+	\hfill
+	\includegraphics[width=45mm]{2uu.eps}
+	\hfill
+	\caption{График $(u_1, \, u_2)$}
+	\hfill
+	\includegraphics[width=45mm]{2tu1.eps}
+	\hfill
+	\caption{График $(t, \, u_1)$}
+    \hfill
+	\includegraphics[width=45mm]{2tu2.eps}
+	\hfill
+	\caption{График $(t, \, u_2)$}
+\end{multicols}
+\end{figure}		
+
+
+\begin{figure}[h]
+\begin{multicols}{3}
+	\hfill
+	\includegraphics[width=45mm]{2pp.eps}
+	\hfill
+	\caption{График $(\psi_1, \, \psi_2)$}
+	\hfill
+	\includegraphics[width=45mm]{2tp1.eps}
+	\hfill
+	\caption{График $(t, \, \psi_1)$}
+    \hfill
+	\includegraphics[width=45mm]{2tp2.eps}
+	\hfill
+	\caption{График $(t, \, \psi_2)$}
+\end{multicols}
+\end{figure}	
+
+\newpage
+\section{Разрывность зависимости $t_1$ от входных параметров}
+
+\paragraph{Пример 1\\}
+\begin{equation}
+A = \begin{bmatrix}
+0 & 3 \\ -3 & 0
+\end{bmatrix},\ 
+B = \begin{bmatrix}
+1 & 0 \\ 0 & 1
+\end{bmatrix}, \
+f = \begin{bmatrix}
+0 \\ 0
+\end{bmatrix}.
+\end{equation}
+
+$$\X_0 = \mathbb{B}\left(\Cl{0}{-2}, 1\right). $$
+$$\X_1 = \Conv{\left(3 + \frac1{\sqrt{2}}\right)\Cl{1}{1}} + \mathbb{B}(0, 1) $$
+$$\PS = \{u\colon u_1^2 + u_2^2 \le 1\} $$
+
+Центр координат является особой точкой типа неустойчивый фокус для матрицы $A$. При этом матрица
+$A$ влияет на траекторию сильнее управления, и траектория не может выйти за пределы некоторой спирали.
+При расположении терминального множества на крайней траектории оно будет достижимо за один оборот
+вокруг центра координат, однако при сколь угодно малом увелечении координаты его центра на перемещение
+потребуется уже два оборота, и значение функционала $t_1^*$ изменится скачком, то есть зависимость не
+является непрерывной.
+
+\begin{figure}[h]
+\begin{multicols}{2}
+	\hfill
+	\includegraphics[width=80mm]{3_1.eps}
+	\hfill
+	\caption{$t_1^* = 1.2680$}
+	\hfill
+	\includegraphics[width=80mm]{3_2.eps}
+	\hfill
+	\caption{$t_1^* = 3.0060$}
+\end{multicols}
+\end{figure}	
+
+\newpage
+\paragraph{Пример 2\\}
+\begin{equation}
+A = \begin{bmatrix}
+1 & 0 \\ 0 & 0
+\end{bmatrix},\ 
+B = \begin{bmatrix}
+1 & 0 \\ 0 & 1
+\end{bmatrix}, \
+f = \begin{bmatrix}
+-1 \\ 0
+\end{bmatrix}.
+\end{equation}
+
+$$\X_0 = \mathbb{B}\left(\Cl{-1}{0}, 1\right). $$
+$$\X_1 = \Conv{\Cl{3}{0}} + \mathbb{B}(0, 1) $$
+$$\PS = \{u\colon u_1^2 + u_2^2 \le 1\} $$
+
+Следующий пример показывает, что разрывы у функционала, вообще говоря, могут быть и второго рода.
+Здесь все точки начального множества неположительны, а вектор $f$ <<тянет>> решение влево с единичной
+скоростью. А так как управления ограничены единичным кругом, выйти в область $\{x_1 > 0\}$ в
+этой задаче невозможно, то есть $t_1^* = +\infty$. Однако при сколь угодно малом смещении начального
+множества вправо, появляется решение, выходящее из точки $\Cl{0}{1+\epsilon}$.
+\begin{figure}[h]
+\begin{multicols}{2}
+	\hfill
+	\includegraphics[width=80mm]{4_1.eps}
+	\hfill
+	\caption{$t_1^* = +\infty$}
+	\hfill
+	\includegraphics[width=80mm]{4_2.eps}
+	\hfill
+	\caption{$t_1^* = 2.9960$}
+\end{multicols}
+\end{figure}
 
 \newpage
 \begin{thebibliography}{0}
 \bibitem{rublev}
 	Рублев~И.В. Лекции по оптимальному управлению.
 \end{thebibliography}
+
 
 \end{document}
