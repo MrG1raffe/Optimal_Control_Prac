@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.5)  24 FEB 2020 22:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.5)  1 MAR 2020 21:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -441,20 +441,20 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `task1_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count119
@@ -527,27 +527,27 @@ Package epstopdf Info: Source file: <msu.eps>
 (epstopdf)                    size: 5465 bytes
 (epstopdf)             Command: <repstopdf --outfile=msu-eps-converted-to.pdf m
 su.eps>
-(epstopdf)             \includegraphics on input line 35.
+(epstopdf)             \includegraphics on input line 37.
 Package epstopdf Info: Output file is already uptodate.
 <msu-eps-converted-to.pdf, id=1, 187.70125pt x 101.37875pt>
 File: msu-eps-converted-to.pdf Graphic file (type pdf)
 <use msu-eps-converted-to.pdf>
-Package pdftex.def Info: msu-eps-converted-to.pdf  used on input line 35.
+Package pdftex.def Info: msu-eps-converted-to.pdf  used on input line 37.
 (pdftex.def)             Requested size: 221.32687pt x 119.54852pt.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./msu-eps-converted-to.pdf
 >]
-LaTeX Font Info:    Try loading font information for U+msa on input line 73.
+LaTeX Font Info:    Try loading font information for U+msa on input line 75.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 73.
+LaTeX Font Info:    Try loading font information for U+msb on input line 75.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [2] [3]
+) [2]
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
@@ -567,7 +567,7 @@ Package epstopdf Info: Source file: <P_set.eps>
  P_set.eps>
 (epstopdf)             \includegraphics on input line 149.
 Package epstopdf Info: Output file is already uptodate.
-<P_set-eps-converted-to.pdf, id=35, 421.575pt x 316.18124pt>
+<P_set-eps-converted-to.pdf, id=32, 421.575pt x 316.18124pt>
 File: P_set-eps-converted-to.pdf Graphic file (type pdf)
 <use P_set-eps-converted-to.pdf>
 Package pdftex.def Info: P_set-eps-converted-to.pdf  used on input line 149.
@@ -577,7 +577,7 @@ Overfull \hbox (47.4239pt too wide) in paragraph at lines 149--149
 [][] 
  []
 
-[4 <./P_set-eps-converted-to.pdf>] [5]
+[3] [4 <./P_set-eps-converted-to.pdf>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 199.
 
 
@@ -586,8 +586,7 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 199.
- [6] [7] [8] [9]
-[10]
+ [5] [6]
 Package epstopdf Info: Source file: <1xx.eps>
 (epstopdf)                    date: 2020-02-24 20:08:46
 (epstopdf)                    size: 1111682 bytes
@@ -596,12 +595,12 @@ Package epstopdf Info: Source file: <1xx.eps>
 (epstopdf)                    size: 401940 bytes
 (epstopdf)             Command: <repstopdf --outfile=1xx-eps-converted-to.pdf 1
 xx.eps>
-(epstopdf)             \includegraphics on input line 302.
+(epstopdf)             \includegraphics on input line 305.
 Package epstopdf Info: Output file is already uptodate.
-<1xx-eps-converted-to.pdf, id=65, 421.575pt x 316.18124pt>
+<1xx-eps-converted-to.pdf, id=53, 421.575pt x 316.18124pt>
 File: 1xx-eps-converted-to.pdf Graphic file (type pdf)
 <use 1xx-eps-converted-to.pdf>
-Package pdftex.def Info: 1xx-eps-converted-to.pdf  used on input line 302.
+Package pdftex.def Info: 1xx-eps-converted-to.pdf  used on input line 305.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <1tx1.eps>
 (epstopdf)                    date: 2020-02-24 20:13:07
@@ -611,12 +610,12 @@ Package epstopdf Info: Source file: <1tx1.eps>
 (epstopdf)                    size: 338819 bytes
 (epstopdf)             Command: <repstopdf --outfile=1tx1-eps-converted-to.pdf 
 1tx1.eps>
-(epstopdf)             \includegraphics on input line 306.
+(epstopdf)             \includegraphics on input line 309.
 Package epstopdf Info: Output file is already uptodate.
-<1tx1-eps-converted-to.pdf, id=66, 421.575pt x 316.18124pt>
+<1tx1-eps-converted-to.pdf, id=54, 421.575pt x 316.18124pt>
 File: 1tx1-eps-converted-to.pdf Graphic file (type pdf)
 <use 1tx1-eps-converted-to.pdf>
-Package pdftex.def Info: 1tx1-eps-converted-to.pdf  used on input line 306.
+Package pdftex.def Info: 1tx1-eps-converted-to.pdf  used on input line 309.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <1tx2.eps>
 (epstopdf)                    date: 2020-02-24 20:13:27
@@ -626,12 +625,12 @@ Package epstopdf Info: Source file: <1tx2.eps>
 (epstopdf)                    size: 332178 bytes
 (epstopdf)             Command: <repstopdf --outfile=1tx2-eps-converted-to.pdf 
 1tx2.eps>
-(epstopdf)             \includegraphics on input line 310.
+(epstopdf)             \includegraphics on input line 313.
 Package epstopdf Info: Output file is already uptodate.
-<1tx2-eps-converted-to.pdf, id=67, 421.575pt x 316.18124pt>
+<1tx2-eps-converted-to.pdf, id=55, 421.575pt x 316.18124pt>
 File: 1tx2-eps-converted-to.pdf Graphic file (type pdf)
 <use 1tx2-eps-converted-to.pdf>
-Package pdftex.def Info: 1tx2-eps-converted-to.pdf  used on input line 310.
+Package pdftex.def Info: 1tx2-eps-converted-to.pdf  used on input line 313.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <1uu.eps>
 (epstopdf)                    date: 2020-02-24 20:09:34
@@ -641,12 +640,12 @@ Package epstopdf Info: Source file: <1uu.eps>
 (epstopdf)                    size: 51541 bytes
 (epstopdf)             Command: <repstopdf --outfile=1uu-eps-converted-to.pdf 1
 uu.eps>
-(epstopdf)             \includegraphics on input line 319.
+(epstopdf)             \includegraphics on input line 320.
 Package epstopdf Info: Output file is already uptodate.
-<1uu-eps-converted-to.pdf, id=68, 421.575pt x 316.18124pt>
+<1uu-eps-converted-to.pdf, id=56, 421.575pt x 316.18124pt>
 File: 1uu-eps-converted-to.pdf Graphic file (type pdf)
 <use 1uu-eps-converted-to.pdf>
-Package pdftex.def Info: 1uu-eps-converted-to.pdf  used on input line 319.
+Package pdftex.def Info: 1uu-eps-converted-to.pdf  used on input line 320.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <1tu1.eps>
 (epstopdf)                    date: 2020-02-24 20:13:49
@@ -656,12 +655,12 @@ Package epstopdf Info: Source file: <1tu1.eps>
 (epstopdf)                    size: 173896 bytes
 (epstopdf)             Command: <repstopdf --outfile=1tu1-eps-converted-to.pdf 
 1tu1.eps>
-(epstopdf)             \includegraphics on input line 323.
+(epstopdf)             \includegraphics on input line 324.
 Package epstopdf Info: Output file is already uptodate.
-<1tu1-eps-converted-to.pdf, id=69, 421.575pt x 316.18124pt>
+<1tu1-eps-converted-to.pdf, id=57, 421.575pt x 316.18124pt>
 File: 1tu1-eps-converted-to.pdf Graphic file (type pdf)
 <use 1tu1-eps-converted-to.pdf>
-Package pdftex.def Info: 1tu1-eps-converted-to.pdf  used on input line 323.
+Package pdftex.def Info: 1tu1-eps-converted-to.pdf  used on input line 324.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <1tu2.eps>
 (epstopdf)                    date: 2020-02-24 20:14:08
@@ -671,12 +670,12 @@ Package epstopdf Info: Source file: <1tu2.eps>
 (epstopdf)                    size: 177411 bytes
 (epstopdf)             Command: <repstopdf --outfile=1tu2-eps-converted-to.pdf 
 1tu2.eps>
-(epstopdf)             \includegraphics on input line 327.
+(epstopdf)             \includegraphics on input line 328.
 Package epstopdf Info: Output file is already uptodate.
-<1tu2-eps-converted-to.pdf, id=70, 421.575pt x 316.18124pt>
+<1tu2-eps-converted-to.pdf, id=58, 421.575pt x 316.18124pt>
 File: 1tu2-eps-converted-to.pdf Graphic file (type pdf)
 <use 1tu2-eps-converted-to.pdf>
-Package pdftex.def Info: 1tu2-eps-converted-to.pdf  used on input line 327.
+Package pdftex.def Info: 1tu2-eps-converted-to.pdf  used on input line 328.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <1pp.eps>
 (epstopdf)                    date: 2020-02-24 20:14:42
@@ -686,12 +685,12 @@ Package epstopdf Info: Source file: <1pp.eps>
 (epstopdf)                    size: 327331 bytes
 (epstopdf)             Command: <repstopdf --outfile=1pp-eps-converted-to.pdf 1
 pp.eps>
-(epstopdf)             \includegraphics on input line 337.
+(epstopdf)             \includegraphics on input line 335.
 Package epstopdf Info: Output file is already uptodate.
-<1pp-eps-converted-to.pdf, id=71, 421.575pt x 316.18124pt>
+<1pp-eps-converted-to.pdf, id=59, 421.575pt x 316.18124pt>
 File: 1pp-eps-converted-to.pdf Graphic file (type pdf)
 <use 1pp-eps-converted-to.pdf>
-Package pdftex.def Info: 1pp-eps-converted-to.pdf  used on input line 337.
+Package pdftex.def Info: 1pp-eps-converted-to.pdf  used on input line 335.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <1tp1.eps>
 (epstopdf)                    date: 2020-02-24 20:15:33
@@ -701,12 +700,12 @@ Package epstopdf Info: Source file: <1tp1.eps>
 (epstopdf)                    size: 338342 bytes
 (epstopdf)             Command: <repstopdf --outfile=1tp1-eps-converted-to.pdf 
 1tp1.eps>
-(epstopdf)             \includegraphics on input line 341.
+(epstopdf)             \includegraphics on input line 339.
 Package epstopdf Info: Output file is already uptodate.
-<1tp1-eps-converted-to.pdf, id=72, 421.575pt x 316.18124pt>
+<1tp1-eps-converted-to.pdf, id=60, 421.575pt x 316.18124pt>
 File: 1tp1-eps-converted-to.pdf Graphic file (type pdf)
 <use 1tp1-eps-converted-to.pdf>
-Package pdftex.def Info: 1tp1-eps-converted-to.pdf  used on input line 341.
+Package pdftex.def Info: 1tp1-eps-converted-to.pdf  used on input line 339.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <1tp2.eps>
 (epstopdf)                    date: 2020-02-24 20:15:41
@@ -716,17 +715,17 @@ Package epstopdf Info: Source file: <1tp2.eps>
 (epstopdf)                    size: 307281 bytes
 (epstopdf)             Command: <repstopdf --outfile=1tp2-eps-converted-to.pdf 
 1tp2.eps>
-(epstopdf)             \includegraphics on input line 345.
+(epstopdf)             \includegraphics on input line 343.
 Package epstopdf Info: Output file is already uptodate.
-<1tp2-eps-converted-to.pdf, id=73, 421.575pt x 316.18124pt>
+<1tp2-eps-converted-to.pdf, id=61, 421.575pt x 316.18124pt>
 File: 1tp2-eps-converted-to.pdf Graphic file (type pdf)
 <use 1tp2-eps-converted-to.pdf>
-Package pdftex.def Info: 1tp2-eps-converted-to.pdf  used on input line 345.
+Package pdftex.def Info: 1tp2-eps-converted-to.pdf  used on input line 343.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
- [11 <./1xx-eps-converted-to.pdf> <./1tx1-eps-converted-to.pdf> <./1tx2-eps-con
-verted-to.pdf> <./1uu-eps-converted-to.pdf> <./1tu1-eps-converted-to.pdf> <./1t
-u2-eps-converted-to.pdf> <./1pp-eps-converted-to.pdf> <./1tp1-eps-converted-to.
-pdf> <./1tp2-eps-converted-to.pdf>]
+ [7 <./1xx-eps-converted-to.pdf> <./1tx1-eps-converted-to.pdf> <./1tx2-eps-conv
+erted-to.pdf> <./1uu-eps-converted-to.pdf> <./1tu1-eps-converted-to.pdf> <./1tu
+2-eps-converted-to.pdf> <./1pp-eps-converted-to.pdf> <./1tp1-eps-converted-to.p
+df> <./1tp2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <2xx_it1.eps>
 (epstopdf)                    date: 2020-02-24 20:59:12
 (epstopdf)                    size: 988992 bytes
@@ -735,14 +734,13 @@ Package epstopdf Info: Source file: <2xx_it1.eps>
 (epstopdf)                    size: 357482 bytes
 (epstopdf)             Command: <repstopdf --outfile=2xx_it1-eps-converted-to.p
 df 2xx_it1.eps>
-(epstopdf)             \includegraphics on input line 375.
+(epstopdf)             \includegraphics on input line 373.
 Package epstopdf Info: Output file is already uptodate.
-<2xx_it1-eps-converted-to.pdf, id=122, 421.575pt x 316.18124pt>
+<2xx_it1-eps-converted-to.pdf, id=111, 421.575pt x 316.18124pt>
 File: 2xx_it1-eps-converted-to.pdf Graphic file (type pdf)
 <use 2xx_it1-eps-converted-to.pdf>
-Package pdftex.def Info: 2xx_it1-eps-converted-to.pdf  used on input line 375.
+Package pdftex.def Info: 2xx_it1-eps-converted-to.pdf  used on input line 373.
 (pdftex.def)             Requested size: 256.0748pt x 192.05975pt.
- [12 <./2xx_it1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <2xx.eps>
 (epstopdf)                    date: 2020-02-24 20:59:35
 (epstopdf)                    size: 988056 bytes
@@ -751,12 +749,12 @@ Package epstopdf Info: Source file: <2xx.eps>
 (epstopdf)                    size: 356869 bytes
 (epstopdf)             Command: <repstopdf --outfile=2xx-eps-converted-to.pdf 2
 xx.eps>
-(epstopdf)             \includegraphics on input line 387.
+(epstopdf)             \includegraphics on input line 383.
 Package epstopdf Info: Output file is already uptodate.
-<2xx-eps-converted-to.pdf, id=131, 421.575pt x 316.18124pt>
+<2xx-eps-converted-to.pdf, id=112, 421.575pt x 316.18124pt>
 File: 2xx-eps-converted-to.pdf Graphic file (type pdf)
 <use 2xx-eps-converted-to.pdf>
-Package pdftex.def Info: 2xx-eps-converted-to.pdf  used on input line 387.
+Package pdftex.def Info: 2xx-eps-converted-to.pdf  used on input line 383.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <2tx1.eps>
 (epstopdf)                    date: 2020-02-24 20:59:51
@@ -766,12 +764,12 @@ Package epstopdf Info: Source file: <2tx1.eps>
 (epstopdf)                    size: 292726 bytes
 (epstopdf)             Command: <repstopdf --outfile=2tx1-eps-converted-to.pdf 
 2tx1.eps>
-(epstopdf)             \includegraphics on input line 391.
+(epstopdf)             \includegraphics on input line 387.
 Package epstopdf Info: Output file is already uptodate.
-<2tx1-eps-converted-to.pdf, id=132, 421.575pt x 316.18124pt>
+<2tx1-eps-converted-to.pdf, id=113, 421.575pt x 316.18124pt>
 File: 2tx1-eps-converted-to.pdf Graphic file (type pdf)
 <use 2tx1-eps-converted-to.pdf>
-Package pdftex.def Info: 2tx1-eps-converted-to.pdf  used on input line 391.
+Package pdftex.def Info: 2tx1-eps-converted-to.pdf  used on input line 387.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <2tx2.eps>
 (epstopdf)                    date: 2020-02-24 21:00:03
@@ -781,12 +779,12 @@ Package epstopdf Info: Source file: <2tx2.eps>
 (epstopdf)                    size: 289071 bytes
 (epstopdf)             Command: <repstopdf --outfile=2tx2-eps-converted-to.pdf 
 2tx2.eps>
-(epstopdf)             \includegraphics on input line 395.
+(epstopdf)             \includegraphics on input line 391.
 Package epstopdf Info: Output file is already uptodate.
-<2tx2-eps-converted-to.pdf, id=133, 421.575pt x 316.18124pt>
+<2tx2-eps-converted-to.pdf, id=114, 421.575pt x 316.18124pt>
 File: 2tx2-eps-converted-to.pdf Graphic file (type pdf)
 <use 2tx2-eps-converted-to.pdf>
-Package pdftex.def Info: 2tx2-eps-converted-to.pdf  used on input line 395.
+Package pdftex.def Info: 2tx2-eps-converted-to.pdf  used on input line 391.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <2uu.eps>
 (epstopdf)                    date: 2020-02-24 21:00:18
@@ -796,12 +794,12 @@ Package epstopdf Info: Source file: <2uu.eps>
 (epstopdf)                    size: 65409 bytes
 (epstopdf)             Command: <repstopdf --outfile=2uu-eps-converted-to.pdf 2
 uu.eps>
-(epstopdf)             \includegraphics on input line 404.
+(epstopdf)             \includegraphics on input line 398.
 Package epstopdf Info: Output file is already uptodate.
-<2uu-eps-converted-to.pdf, id=134, 421.575pt x 316.18124pt>
+<2uu-eps-converted-to.pdf, id=115, 421.575pt x 316.18124pt>
 File: 2uu-eps-converted-to.pdf Graphic file (type pdf)
 <use 2uu-eps-converted-to.pdf>
-Package pdftex.def Info: 2uu-eps-converted-to.pdf  used on input line 404.
+Package pdftex.def Info: 2uu-eps-converted-to.pdf  used on input line 398.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <2tu1.eps>
 (epstopdf)                    date: 2020-02-24 21:00:36
@@ -811,12 +809,12 @@ Package epstopdf Info: Source file: <2tu1.eps>
 (epstopdf)                    size: 267200 bytes
 (epstopdf)             Command: <repstopdf --outfile=2tu1-eps-converted-to.pdf 
 2tu1.eps>
-(epstopdf)             \includegraphics on input line 408.
+(epstopdf)             \includegraphics on input line 402.
 Package epstopdf Info: Output file is already uptodate.
-<2tu1-eps-converted-to.pdf, id=135, 421.575pt x 316.18124pt>
+<2tu1-eps-converted-to.pdf, id=116, 421.575pt x 316.18124pt>
 File: 2tu1-eps-converted-to.pdf Graphic file (type pdf)
 <use 2tu1-eps-converted-to.pdf>
-Package pdftex.def Info: 2tu1-eps-converted-to.pdf  used on input line 408.
+Package pdftex.def Info: 2tu1-eps-converted-to.pdf  used on input line 402.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <2tu2.eps>
 (epstopdf)                    date: 2020-02-24 21:00:45
@@ -826,12 +824,12 @@ Package epstopdf Info: Source file: <2tu2.eps>
 (epstopdf)                    size: 268971 bytes
 (epstopdf)             Command: <repstopdf --outfile=2tu2-eps-converted-to.pdf 
 2tu2.eps>
-(epstopdf)             \includegraphics on input line 412.
+(epstopdf)             \includegraphics on input line 406.
 Package epstopdf Info: Output file is already uptodate.
-<2tu2-eps-converted-to.pdf, id=136, 421.575pt x 316.18124pt>
+<2tu2-eps-converted-to.pdf, id=117, 421.575pt x 316.18124pt>
 File: 2tu2-eps-converted-to.pdf Graphic file (type pdf)
 <use 2tu2-eps-converted-to.pdf>
-Package pdftex.def Info: 2tu2-eps-converted-to.pdf  used on input line 412.
+Package pdftex.def Info: 2tu2-eps-converted-to.pdf  used on input line 406.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <2pp.eps>
 (epstopdf)                    date: 2020-02-24 21:00:59
@@ -841,12 +839,12 @@ Package epstopdf Info: Source file: <2pp.eps>
 (epstopdf)                    size: 359664 bytes
 (epstopdf)             Command: <repstopdf --outfile=2pp-eps-converted-to.pdf 2
 pp.eps>
-(epstopdf)             \includegraphics on input line 422.
+(epstopdf)             \includegraphics on input line 413.
 Package epstopdf Info: Output file is already uptodate.
-<2pp-eps-converted-to.pdf, id=137, 421.575pt x 316.18124pt>
+<2pp-eps-converted-to.pdf, id=118, 421.575pt x 316.18124pt>
 File: 2pp-eps-converted-to.pdf Graphic file (type pdf)
 <use 2pp-eps-converted-to.pdf>
-Package pdftex.def Info: 2pp-eps-converted-to.pdf  used on input line 422.
+Package pdftex.def Info: 2pp-eps-converted-to.pdf  used on input line 413.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <2tp1.eps>
 (epstopdf)                    date: 2020-02-24 21:01:09
@@ -856,12 +854,12 @@ Package epstopdf Info: Source file: <2tp1.eps>
 (epstopdf)                    size: 309881 bytes
 (epstopdf)             Command: <repstopdf --outfile=2tp1-eps-converted-to.pdf 
 2tp1.eps>
-(epstopdf)             \includegraphics on input line 426.
+(epstopdf)             \includegraphics on input line 417.
 Package epstopdf Info: Output file is already uptodate.
-<2tp1-eps-converted-to.pdf, id=138, 421.575pt x 316.18124pt>
+<2tp1-eps-converted-to.pdf, id=119, 421.575pt x 316.18124pt>
 File: 2tp1-eps-converted-to.pdf Graphic file (type pdf)
 <use 2tp1-eps-converted-to.pdf>
-Package pdftex.def Info: 2tp1-eps-converted-to.pdf  used on input line 426.
+Package pdftex.def Info: 2tp1-eps-converted-to.pdf  used on input line 417.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 Package epstopdf Info: Source file: <2tp2.eps>
 (epstopdf)                    date: 2020-02-24 21:01:20
@@ -871,18 +869,21 @@ Package epstopdf Info: Source file: <2tp2.eps>
 (epstopdf)                    size: 276686 bytes
 (epstopdf)             Command: <repstopdf --outfile=2tp2-eps-converted-to.pdf 
 2tp2.eps>
-(epstopdf)             \includegraphics on input line 430.
+(epstopdf)             \includegraphics on input line 421.
 Package epstopdf Info: Output file is already uptodate.
-<2tp2-eps-converted-to.pdf, id=139, 421.575pt x 316.18124pt>
+<2tp2-eps-converted-to.pdf, id=120, 421.575pt x 316.18124pt>
 File: 2tp2-eps-converted-to.pdf Graphic file (type pdf)
 <use 2tp2-eps-converted-to.pdf>
-Package pdftex.def Info: 2tp2-eps-converted-to.pdf  used on input line 430.
+Package pdftex.def Info: 2tp2-eps-converted-to.pdf  used on input line 421.
 (pdftex.def)             Requested size: 128.0374pt x 96.02745pt.
 
-[13 <./2xx-eps-converted-to.pdf> <./2tx1-eps-converted-to.pdf> <./2tx2-eps-conv
-erted-to.pdf> <./2uu-eps-converted-to.pdf> <./2tu1-eps-converted-to.pdf> <./2tu
-2-eps-converted-to.pdf> <./2pp-eps-converted-to.pdf> <./2tp1-eps-converted-to.p
-df> <./2tp2-eps-converted-to.pdf>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8 <./2xx_it1-eps-converted-to.pdf>] [9 <./2xx-eps-converted-to.pdf> <./2tx1-ep
+s-converted-to.pdf> <./2tx2-eps-converted-to.pdf> <./2uu-eps-converted-to.pdf> 
+<./2tu1-eps-converted-to.pdf> <./2tu2-eps-converted-to.pdf> <./2pp-eps-converte
+d-to.pdf> <./2tp1-eps-converted-to.pdf> <./2tp2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <3_1.eps>
 (epstopdf)                    date: 2020-02-24 21:57:56
 (epstopdf)                    size: 1193957 bytes
@@ -891,20 +892,20 @@ Package epstopdf Info: Source file: <3_1.eps>
 (epstopdf)                    size: 432518 bytes
 (epstopdf)             Command: <repstopdf --outfile=3_1-eps-converted-to.pdf 3
 _1.eps>
-(epstopdf)             \includegraphics on input line 466.
+(epstopdf)             \includegraphics on input line 462.
 Package epstopdf Info: Output file is already uptodate.
-<3_1-eps-converted-to.pdf, id=190, 421.575pt x 316.18124pt>
+<3_1-eps-converted-to.pdf, id=178, 421.575pt x 316.18124pt>
 File: 3_1-eps-converted-to.pdf Graphic file (type pdf)
 <use 3_1-eps-converted-to.pdf>
-Package pdftex.def Info: 3_1-eps-converted-to.pdf  used on input line 466.
+Package pdftex.def Info: 3_1-eps-converted-to.pdf  used on input line 462.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
 
-Overfull \hbox (11.29517pt too wide) in paragraph at lines 465--468
+Overfull \hbox (11.29517pt too wide) in paragraph at lines 461--464
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--468
+Underfull \hbox (badness 10000) in paragraph at lines 461--464
 
  []
 
@@ -916,24 +917,23 @@ Package epstopdf Info: Source file: <3_2.eps>
 (epstopdf)                    size: 106485 bytes
 (epstopdf)             Command: <repstopdf --outfile=3_2-eps-converted-to.pdf 3
 _2.eps>
-(epstopdf)             \includegraphics on input line 470.
+(epstopdf)             \includegraphics on input line 466.
 Package epstopdf Info: Output file is already uptodate.
-<3_2-eps-converted-to.pdf, id=191, 421.575pt x 316.18124pt>
+<3_2-eps-converted-to.pdf, id=179, 421.575pt x 316.18124pt>
 File: 3_2-eps-converted-to.pdf Graphic file (type pdf)
 <use 3_2-eps-converted-to.pdf>
-Package pdftex.def Info: 3_2-eps-converted-to.pdf  used on input line 470.
+Package pdftex.def Info: 3_2-eps-converted-to.pdf  used on input line 466.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
 
-Overfull \hbox (11.29517pt too wide) in paragraph at lines 469--472
+Overfull \hbox (11.29517pt too wide) in paragraph at lines 465--468
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--472
+Underfull \hbox (badness 10000) in paragraph at lines 465--468
 
  []
 
-[14 <./3_1-eps-converted-to.pdf> <./3_2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <4_1.eps>
 (epstopdf)                    date: 2020-02-24 22:15:35
 (epstopdf)                    size: 915417 bytes
@@ -942,20 +942,20 @@ Package epstopdf Info: Source file: <4_1.eps>
 (epstopdf)                    size: 288274 bytes
 (epstopdf)             Command: <repstopdf --outfile=4_1-eps-converted-to.pdf 4
 _1.eps>
-(epstopdf)             \includegraphics on input line 502.
+(epstopdf)             \includegraphics on input line 497.
 Package epstopdf Info: Output file is already uptodate.
-<4_1-eps-converted-to.pdf, id=207, 421.575pt x 316.18124pt>
+<4_1-eps-converted-to.pdf, id=180, 421.575pt x 316.18124pt>
 File: 4_1-eps-converted-to.pdf Graphic file (type pdf)
 <use 4_1-eps-converted-to.pdf>
-Package pdftex.def Info: 4_1-eps-converted-to.pdf  used on input line 502.
+Package pdftex.def Info: 4_1-eps-converted-to.pdf  used on input line 497.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
 
-Overfull \hbox (11.29517pt too wide) in paragraph at lines 501--504
+Overfull \hbox (11.29517pt too wide) in paragraph at lines 496--499
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--504
+Underfull \hbox (badness 10000) in paragraph at lines 496--499
 
  []
 
@@ -967,56 +967,61 @@ Package epstopdf Info: Source file: <4_2.eps>
 (epstopdf)                    size: 36995 bytes
 (epstopdf)             Command: <repstopdf --outfile=4_2-eps-converted-to.pdf 4
 _2.eps>
-(epstopdf)             \includegraphics on input line 506.
+(epstopdf)             \includegraphics on input line 501.
 Package epstopdf Info: Output file is already uptodate.
-<4_2-eps-converted-to.pdf, id=208, 421.575pt x 316.18124pt>
+<4_2-eps-converted-to.pdf, id=181, 421.575pt x 316.18124pt>
 File: 4_2-eps-converted-to.pdf Graphic file (type pdf)
 <use 4_2-eps-converted-to.pdf>
-Package pdftex.def Info: 4_2-eps-converted-to.pdf  used on input line 506.
+Package pdftex.def Info: 4_2-eps-converted-to.pdf  used on input line 501.
 (pdftex.def)             Requested size: 227.62204pt x 170.72084pt.
 
-Overfull \hbox (11.29517pt too wide) in paragraph at lines 505--508
+Overfull \hbox (11.29517pt too wide) in paragraph at lines 500--503
 [] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--508
+Underfull \hbox (badness 10000) in paragraph at lines 500--503
 
  []
 
-[15 <./4_1-eps-converted-to.pdf> <./4_2-eps-converted-to.pdf>] [16]
-(./task1_report.aux) ) 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10 <./3_1-eps-converted-to.pdf> <./3_2-eps-converted-to.pdf>] [11 <./4_1-eps-c
+onverted-to.pdf> <./4_2-eps-converted-to.pdf>] (./task1_report.aux) ) 
 Here is how much of TeX's memory you used:
- 3993 strings out of 492615
- 53042 string characters out of 6131390
- 129091 words of memory out of 5000000
- 7788 multiletter control sequences out of 15000+600000
+ 3995 strings out of 492615
+ 53055 string characters out of 6131390
+ 130108 words of memory out of 5000000
+ 7790 multiletter control sequences out of 15000+600000
  22336 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,27p,678b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.e
-nc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
-s/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pfb></usr/s
-hare/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/typ
-e1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
-fbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type
-1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
-rm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/sha
-re/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on task1_report.pdf (16 pages, 6424353 bytes).
+ 41i,10n,27p,677b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/shar
+e/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+frm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+ti1200.pfb>
+Output written on task1_report.pdf (11 pages, 6431872 bytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
+ 281 PDF objects out of 1000 (max. 8388607)
+ 187 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

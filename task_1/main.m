@@ -5,9 +5,33 @@ len = 6; % длина опорной гиперплоскости
 psi_0_n = 50; % размер сетки для psi_0
 n_check = 128; % количество направлений при проверке попадания в терминальное множество
 h_t = 0.001; % шаг сетки по времени
-T_max = 5; % максимально возможное t1
+T_max = 15; % максимально возможное t1
 B_det_eps = 0.00001; % эпсилон для определителя В 
 
+
+%% Пример для тестирования
+A = [0 0; 0 0];
+B = [0 1; 0 0];
+f = [0; 0];
+a = 2;
+b = 1;
+x0 = [-10 1]';
+r0 = 1;
+x1 = [1 1;
+      -1 2];
+eps = 1;
+
+while det(B) < B_det_eps
+    B = B + (rand(2) - 0.5) * 10 * sqrt(B_det_eps);
+end
+
+figure('Name', 'Plot (x1, x2)');
+drawSet(@(l) rho_X0(l, x0, r0), drawSet_n, 'y');
+hold on;
+drawSet(@(l) rho_X1(l, x1, eps), drawSet_n, 'g');
+xlabel('x_1');
+ylabel('x_2');
+axis equal;
 
 
 %% Пример 1 (сразу хорошее УТ)
@@ -144,7 +168,7 @@ x0 = [0 -2]';
 r0 = 1;
 x1 = [1; 
       1] * 3 + 1/sqrt(2);
-x1 = x1 + 0.1 * [1; 1];
+%x1 = x1 + 0.1 * [1; 1];
 eps = 1;
 
 while det(B) < B_det_eps
@@ -160,6 +184,12 @@ ylabel('x_2');
 axis equal;
 
 
+
+
+
+
+
+%% ВЫЧИСЛЕНИЕ
 %% Вычисление траекторий, удовлетворяющих ПМП
 clc;
 phi = linspace(0, 2 * pi, psi_0_n + 1);
@@ -184,6 +214,11 @@ psi_0 = [cos(phi); sin(phi)];
 
 [X, U, Psi, opt_ind, t1, t] = calc_traj(psi_0, psi_0_n, A, B, f, h_t, T_max, a, b, x0, r0, x1, eps, n_check);
 
+
+
+
+
+%% РИСОВАНИЕ
 %% График (x1, x2) - только ОУ
 figure('Name', 'Plot (x1, x2)');
 drawSet(@(l) rho_X0(l, x0, r0), drawSet_n, 'y');
@@ -234,15 +269,14 @@ end
 if opt_ind
     plot(X(1, :, opt_ind), X(2, :, opt_ind), 'r', 'LineWidth', 2);
 end
-axis([-3 5 -3 3]);
 x_0 = X(:, 1, opt_ind);
 psi0 = psi_0(:, opt_ind);
 l = x_0 - x0;
 l = l / norm(l);
 tau = [-l(2); l(1)];
-%plot(x_0(1) + linspace(-len/2, len/2, drawSet_n) * tau(1), x_0(2) + linspace(-len/2, len/2, drawSet_n) * tau(2), 'black', 'LineWidth', 2);
+plot(x_0(1) + linspace(-len/2, len/2, drawSet_n) * tau(1), x_0(2) + linspace(-len/2, len/2, drawSet_n) * tau(2), 'black', 'LineWidth', 2);
 hold on;
-%plot(x_0(1) + linspace(0, 1, drawSet_n) * psi0(1), x_0(2) + linspace(0, 1, drawSet_n) * psi0(2), 'black', 'LineWidth', 2);
+plot(x_0(1) + linspace(0, 1, drawSet_n) * psi0(1), x_0(2) + linspace(0, 1, drawSet_n) * psi0(2), 'black', 'LineWidth', 2);
 hold on;
 
 x_1 = X(:, size(X, 2), opt_ind);
@@ -250,9 +284,9 @@ psi1 = Psi(:, size(Psi, 2), opt_ind);
 psi1 = psi1 / norm(psi1);
 l1 = find_dir(x_1, @(l) rho_X1(l, x1, eps), n_check);
 tau = [-l1(2); l1(1)];
-%plot(x_1(1) + linspace(-len/2, len/2, drawSet_n) * tau(1), x_1(2) + linspace(-len/2, len/2, drawSet_n) * tau(2), 'black', 'LineWidth', 2);
+plot(x_1(1) + linspace(-len/2, len/2, drawSet_n) * tau(1), x_1(2) + linspace(-len/2, len/2, drawSet_n) * tau(2), 'black', 'LineWidth', 2);
 hold on;
-%plot(x_1(1) + linspace(0, 1, drawSet_n) * (-psi1(1)), x_1(2) + linspace(0, 1, drawSet_n) * (-psi1(2)), 'black', 'LineWidth', 2);
+plot(x_1(1) + linspace(0, 1, drawSet_n) * (-psi1(1)), x_1(2) + linspace(0, 1, drawSet_n) * (-psi1(2)), 'black', 'LineWidth', 2);
 hold on;
 
 %% График (t, x1)
