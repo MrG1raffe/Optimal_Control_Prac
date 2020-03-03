@@ -13,53 +13,72 @@ function [X, U, Psi, opt_traj_ind, t1, t_res] = calc_traj(psi_0, psi_0_n, A, B, 
     is_reached = 0;
     conj_syst = @(t, y) -A' * y;
     first_time = 1;
+    not_calc = zeros(1, psi_0_n);
     while(~is_reached && t(T) <= T_max) 
         for i = 1:psi_0_n
-            if first_time
-                psi_0_init = psi_0(:, i);
-            else
-                psi_0_init = Psi(:, t1_opt, i);
-            end
-            [~, psi] = ode45(conj_syst, t, psi_0_init);
-            psi = psi';
-            u = zeros(2, T);
-            for j = 1:T
-                 [~, u(:, j)] = rho_P(B' * psi(:, j), a, b);
-            end
-            if first_time
-                [~, x_init] = rho_X0(psi_0(:, i), x0, r0);
-            else
-                x_init = X(:, t1_opt, i);
-            end
-            u_func = @(t) u(:, min(1 + round(t / h_t), T));
-            [~, x] = ode45(@(t, y) A * y + B * u_func(t) + f,  0:h_t:1, x_init);
-            x = x';
-            for j = 1:T
-                if is_in_terminal(x(:, j), @(l) rho_X1(l, x1, eps), n_check)
-                    is_reached = 1;
-                    T = j;
-                    opt_traj_ind = i;
-                    X = X(:, 1 : t1_opt + T, :);
-                    U = U(:, 1 : t1_opt + T, :);
-                    Psi = Psi(:, 1 : t1_opt + T, :);
-                    break
+            if ~not_calc(i)
+                if first_time
+                    psi_0_init = psi_0(:, i);
+                else
+                    psi_0_init = Psi(:, t1_opt, i);
                 end
+                [~, psi] = ode45(conj_syst, t, psi_0_init);
+                psi = psi';
+                u = zeros(2, T);
+                for j = 1:T
+                     [~, u(:, j)] = rho_P(B' * psi(:, j), a, b);
+                end
+                if first_time
+                    [~, x_init] = rho_X0(psi_0(:, i), x0, r0);
+                else
+                    x_init = X(:, t1_opt, i);
+                end
+                u_func = @(t) u(:, min(1 + round(t / h_t), T));
+                [~, x] = ode45(@(t, y) A * y + B * u_func(t) + f,  0:h_t:1, x_init);
+                x = x';
+                for j = 1:T
+                    if norm(x(:, j) - x0) < r0 - 0.01
+%                         plot(x(1, j), x(2, j), 'ro');
+%                         hold on;
+%                         plot(x(1, 1), x(2, 1), 'bo');
+%                         hold on;
+                        x(:, j:T) = nan * ones(size(x(:, j:T)));
+                        u(:, j:T) = nan * ones(size(x(:, j:T)));
+                        psi(:, j:T) = nan * ones(size(x(:, j:T)));
+%                         x = x(:, 1:T);
+%                         u = u(:, 1:T);
+%                         psi = psi(:, 1:T);
+%                         Psi(:, t1_opt + (1:T), i) = psi;
+%                         X(:, t1_opt + (1:T), i) = x;
+%                         U(:, t1_opt + (1:T), i) = u;
+                        not_calc(i) = 1;
+                        break;
+                    end
+                    if is_in_terminal(x(:, j), @(l) rho_X1(l, x1, eps), n_check)
+                        is_reached = 1;
+                        T = j;
+                        opt_traj_ind = i;
+                        X = X(:, 1 : t1_opt + T, :);
+                        U = U(:, 1 : t1_opt + T, :);
+                        Psi = Psi(:, 1 : t1_opt + T, :);
+                        break
+                    end
+                end
+
+                x = x(:, 1:T);
+                u = u(:, 1:T);
+                psi = psi(:, 1:T);
+                Psi(:, t1_opt + (1:T), i) = psi;
+                X(:, t1_opt + (1:T), i) = x;
+                U(:, t1_opt + (1:T), i) = u;
             end
-
-            x = x(:, 1:T);
-            u = u(:, 1:T);
-            psi = psi(:, 1:T);
-            Psi(:, t1_opt + (1:T), i) = psi;
-            X(:, t1_opt + (1:T), i) = x;
-            U(:, t1_opt + (1:T), i) = u;
-
         end
         t1_opt = t1_opt + T;
         if ~is_reached 
             if (1 + t(T)) <= T_max
-                Psi(:, t1_opt+1:t1_opt+T, :) = zeros(2, T, psi_0_n);
-                X(:, t1_opt+1:t1_opt+T, :) = zeros(2, T, psi_0_n);
-                U(:, t1_opt+1:t1_opt+T, :) = zeros(2, T, psi_0_n);
+                Psi(:, t1_opt+1:t1_opt+T, :) =nan * ones(2, T, psi_0_n);
+                X(:, t1_opt+1:t1_opt+T, :) = nan * ones(2, T, psi_0_n);
+                U(:, t1_opt+1:t1_opt+T, :) = nan * ones(2, T, psi_0_n);
             end
             first_time = 0;
             t = t + 1;
