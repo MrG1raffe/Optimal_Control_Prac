@@ -1,21 +1,22 @@
-function plot_res_2(t, x1, x2, x3, u, l, H, umax, M)
-    T = t(numel(t));
+function plot_res_2(t, x1, x2, x3, u, l, H, umax, M, m0)
+    T = t(end);
     
     subplot(2, 2, 1);
     plot(t, x1 - l, 'b');
     xlabel('t');
     ylabel('v');
+    xlim([0 T]);
     %axis equal;
 
     subplot(2, 2, 2);
-    y = x2;
-    plot(t, y, 'b', t, M * ones(size(t)), 'r--');
+    plot(t, x2, 'b', t, M * ones(size(t)), 'r--',  t, m0 * ones(size(t)), 'r--');
     xlabel('t');
     ylabel('m');
+    xlim([0 T]);
     %axis equal;
 
     subplot(2, 2, 4);
-    plot(t, u, 'b', t, umax * ones(size(t)), 'r--');
+    plot(t, u, 'b', t, zeros(size(t)), 'r--', t, umax * ones(size(t)), 'r--');
     xlabel('t');
     ylabel('u');
     xlim([0 T]);
@@ -25,5 +26,6 @@ function plot_res_2(t, x1, x2, x3, u, l, H, umax, M)
     plot(t, x3, 'b', t, H * ones(size(t)), 'r--');
     xlabel('t');
     ylabel('H');
+    xlim([0 T]);
     %axis equal;   
 end

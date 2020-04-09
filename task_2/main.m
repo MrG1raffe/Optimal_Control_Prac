@@ -1,9 +1,9 @@
 %% Входные данные
-T = 2;
+T = 5;
 M = 1;
-m0 = 3;
-umax = 1;
-H = 0.5;
+m0 = 2;
+umax = 2;
+H = 20;
 l = 1;
 g = 0.2;
 eps = 0.01;
@@ -14,15 +14,6 @@ clc;
 
 %% Задача 2
 clc;
-[x, u, t_switch, J_min] = calc_optimal_traj_2(T, M, m0, umax, l, g, H, 'plot');
-
-
-%% Пример режимов 2-1-3
-T = 2;
-M = 1;
-m0 = 6;
-umax = 4;
-H = 2.3;
-l = 1;
-g = 0.5;
-eps = 0.01;
+psi_N = 60;
+H_eps = H * 0.1;
+[t, x, u, t_switch, J_min] = calc_optimal_traj_2(T, M, m0, umax, l, g, H, psi_N, H_eps, 'plot');

@@ -1,16 +1,18 @@
-function [x_opt, u_opt, tau_s_opt, J_min] = calc_optimal_traj_2(T, M, m0, umax, l, g, H, ~)
+function [t_opt,x_opt, u_opt, tau_s_opt, J_min] = calc_optimal_traj_2(T, M, m0, umax, l, g, H, psi_N, H_eps, ~)
     % Calculates an optimal control, optimal trajectory, 
     % moments of switches and minimal value of J for problem 2     
     
     time_N = 1000;
-    H_eps = 0.05 * H;
+    %H_eps = 0.01 * H;
     psi1_eps = 0.5;
-    psi_N = 40;
+    %psi_N = 200;
     
+    t_opt = [];
     x_opt = [];
     u_opt = [];
     tau_s_opt = [];
     J_min = [];
+    psi_opt = [];
     
     if (umax < m0 * g / l)
         error("Incorrect input (umax < m0 * g / l)");
@@ -35,7 +37,7 @@ function [x_opt, u_opt, tau_s_opt, J_min] = calc_optimal_traj_2(T, M, m0, umax, 
     
     tau_f = (m0 - M) / umax;
     tau_s_opt = [];
-    if (abs(x3(end) - H) < H_eps)
+    if (abs(x3(end) - H) < 0.001)
         if (tau_f < T)
             tau_s_opt = tau_f;
         end
@@ -43,21 +45,20 @@ function [x_opt, u_opt, tau_s_opt, J_min] = calc_optimal_traj_2(T, M, m0, umax, 
         J_min = trapz(t, u_opt.^4);
         x2 = max(m0 - umax * t, M);
         x_opt = [x1; x2];
-        if nargin == 8
-            plot_res_2(t, x1, x2, x3, u_opt, l, H, umax, M);
+        if nargin == 10
+            plot_res_2(t, x1, x2, x3, u_opt, l, H, umax, M, m0);
         end
         return;
     end
     
-    J_min = umax^4 * min(tau_f, T);
+    J_min = umax^4 * T;
     modes_opt = [];
     
     psi10 = linspace(-1, 1, 2 * psi_N);
     psi30 = linspace(-1, 1, 2 * psi_N);
     psi0 = linspace(0, 1, psi_N);
     psi0(1) = [];
-    psi_min_dif = 100;
-    H_min_dif = 100;
+    H_min_dif = inf;
     for i=1:(2 * psi_N)
         for j = 1:(2 * psi_N)
             if (psi10(i) * psi30(j) < 0 || abs(psi30(j)) * T > abs(psi10(i)) || psi10(i)^2 + psi30(j)^2 > 1)
@@ -91,8 +92,9 @@ function [x_opt, u_opt, tau_s_opt, J_min] = calc_optimal_traj_2(T, M, m0, umax, 
                 switches = [];
                 modes = mode;
                 t_turn_off = T;
-                 disp("Calculating trajectory");
-                while (te < tspan(2))
+                str = ['Calculating trajectory: psi0 = ', num2str(psi0(k)), ' psi10 = ', num2str(psi10(i)), ' psi20 = ', num2str(psi20), ' psi30 = ', num2str(psi30(j))];
+                disp(str);
+                while (~isempty(te))
                     [t, y, te, ye, ie] = ode45(@(t, y) odefun(t, y, psi30(j), psi0(k), g, umax, mode), tspan, y0, options);
                     if ~isempty(te)
                         te = te(end);
@@ -102,6 +104,9 @@ function [x_opt, u_opt, tau_s_opt, J_min] = calc_optimal_traj_2(T, M, m0, umax, 
                     y_res = [y_res; y];
                     t_res = [t_res; t];
                     y0 = ye;
+                    if (t(end) == T)
+                        break;
+                    end
                     if (~isempty(ie)) && (mode ~= 3)
                         if (ie == 1)
                             if (dir == -1)
@@ -134,28 +139,22 @@ function [x_opt, u_opt, tau_s_opt, J_min] = calc_optimal_traj_2(T, M, m0, umax, 
                 x2 = y_res(:, 2)';
                 F = y_res(:, 3)';
                 psi1 = y_res(:, 4)';
-                if (abs(psi1(end)) < psi_min_dif)
-                    psi_min_dif = abs(psi1(end));
-                end
                 if (abs(psi1(end)) < psi1_eps)
                     x3 = height(t_res, x1, l);
-                    if abs(x3(end) - H) < H_min_dif
-                        H_min_dif = abs(x3(end) - H);
+                    if 100 * abs(x3(end) - H) / H < H_min_dif
+                        H_min_dif = 100 * abs(x3(end) - H);
                     end
                     if (abs(x3(end) - H) < H_eps)
-                        
                         u = (F > 4 .* x2 * psi0(k) * umax^3) * umax + (F <= 4 * x2 * psi0(k) * umax^3) .* (F > 0) .* nthroot(F ./ (4 * x2 * psi0(k)), 3) + 0;
                         u = u .* (t_res <= t_turn_off);
                         J = trapz(t_res, u.^4);
                         if (J < J_min)
-                            psi30_opt = psi30(j);
                             t_opt = t_res;
                             u_opt = u;
                             x_opt = [x1; x2; x3];
-                            F_opt = F;
                             tau_s_opt = switches;
                             J_min = J;
-                            psi0_opt = psi0(k);
+                            psi_opt = [psi0(k), psi10(i), psi20, psi30(j)]; 
                             modes_opt = modes;
                         end
                     end
@@ -163,25 +162,26 @@ function [x_opt, u_opt, tau_s_opt, J_min] = calc_optimal_traj_2(T, M, m0, umax, 
             end
         end
     end
-    psi30_opt
     if isempty(modes_opt)
-        H_min_dif
-        psi_min_dif
         disp("Optimal control wasn't found.");
+        disp("Minimal height inaccuracy, %:");
+        disp(H_min_dif);
     else
         disp("Optimal control was found.");
+        disp("Optimal parameters: psi0 = ");
+        disp(psi_opt);
         disp("J_min = ");
         disp(J_min);
         disp("Modes:");
         disp(modes_opt);
-        disp("Switch times:");
+        disp("Switch time(s):");
         disp(tau_s_opt);
-        figure
-        plot(t_opt, F_opt, t_opt, F_opt - 4 * psi0_opt * x_opt(2,:) * umax^3);
-        legend('F', 'K');
-        if nargin == 8
+%         figure
+%         plot(t_opt, F_opt);
+%         legend('F);
+        if nargin == 10
             figure
-            plot_res_2(t_opt, x_opt(1, :), x_opt(2, :), x_opt(3, :), u_opt, l, H, umax, M);
+            plot_res_2(t_opt, x_opt(1, :), x_opt(2, :), x_opt(3, :), u_opt, l, H, umax, M, m0);
         end
     end
 end

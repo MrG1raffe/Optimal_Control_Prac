@@ -2,6 +2,10 @@ function [x_opt, u_opt, tau_switch_opt, H] = calc_optimal_traj_1(T, M, m0, umax,
     % Calculates an optimal control, optimal trajectory 
     % and switch time for problem 1
     
+    x_opt = [];
+    u_opt = [];
+    tau_switch_opt = 0;
+    H = 0;
     time_N = 1000;
     tau_N = 1000;
     t = linspace(0, T, time_N);
@@ -25,6 +29,9 @@ function [x_opt, u_opt, tau_switch_opt, H] = calc_optimal_traj_1(T, M, m0, umax,
         plot(t, x1 - l, 'b', t, (-eps) * ones(size(t)), 'r--', t, (eps) * ones(size(t)), 'r--');
         xlabel('t');
         ylabel('v');
+        figure
+        x2 = max(m0 - umax * t, m0 - umax * tau_f);
+        plot(t, x2);
         return;
     end
     tau_s = linspace(min(tau_f, T), 0, tau_N);
@@ -43,6 +50,6 @@ function [x_opt, u_opt, tau_switch_opt, H] = calc_optimal_traj_1(T, M, m0, umax,
     disp("H(T) = ");
     disp(H);
     if (nargin == 8)
-          plot_res(t, x1, x2, x3, u_opt, l, eps);
+          plot_res(t, x1, x2, x3, u_opt, l, eps, M, m0, umax);
     end
 end
