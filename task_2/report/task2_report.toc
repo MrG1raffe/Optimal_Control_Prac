@@ -11,7 +11,7 @@
 \contentsline {paragraph}{\IeC {\CYRS }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt } $m(T) > M$}{6}% 
 \contentsline {subparagraph}{\IeC {\CYRP }\IeC {\cyru }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyrsftsn } $F(T) \geqslant 0$}{6}% 
 \contentsline {subparagraph}{\IeC {\CYRP }\IeC {\cyru }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyrsftsn } $F(T) < 0$}{6}% 
-\contentsline {paragraph}{\IeC {\CYRS }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt } $m(t) = M$}{6}% 
+\contentsline {paragraph}{\IeC {\CYRS }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt } $m(t) = M$}{7}% 
 \contentsline {paragraph}{\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{7}% 
 \contentsline {subsection}{\numberline {5.2}\IeC {\CYRA }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyrm }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrs }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt }}{7}% 
 \contentsline {paragraph}{\IeC {\CYRS }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt } $m(T) > M$}{7}% 
@@ -19,18 +19,18 @@
 \contentsline {subparagraph}{\IeC {\CYRP }\IeC {\cyru }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyrsftsn } $F(T) = 0$}{7}% 
 \contentsline {subparagraph}{\IeC {\CYRP }\IeC {\cyru }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyrsftsn } $F(T) > 0$}{7}% 
 \contentsline {paragraph}{\IeC {\CYRS }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt } $m(T) = M$}{7}% 
-\contentsline {paragraph}{\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{7}% 
-\contentsline {subsection}{\numberline {5.3}\IeC {\CYRR }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrr }\IeC {\cyre }\IeC {\cyrsh }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyro }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyrsftsn } \IeC {\cyrz }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrch }\IeC {\cyri } \IeC {\cyri } \IeC {\cyra }\IeC {\cyrl }\IeC {\cyrg }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyrm } \IeC {\cyrr }\IeC {\cyre }\IeC {\cyrsh }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrya }}{7}% 
+\contentsline {paragraph}{\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{8}% 
+\contentsline {subsection}{\numberline {5.3}\IeC {\CYRR }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrr }\IeC {\cyre }\IeC {\cyrsh }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyro }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyrsftsn } \IeC {\cyrz }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrch }\IeC {\cyri } \IeC {\cyri } \IeC {\cyra }\IeC {\cyrl }\IeC {\cyrg }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyrm } \IeC {\cyrr }\IeC {\cyre }\IeC {\cyrsh }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrya }}{8}% 
 \contentsline {section}{\numberline {6}\IeC {\CYRR }\IeC {\cyre }\IeC {\cyrsh }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre } \IeC {\cyrz }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrch }\IeC {\cyri } 2}{8}% 
 \contentsline {subsection}{\numberline {6.1}\IeC {\CYRN }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyrm }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrs }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt }}{9}% 
-\contentsline {paragraph}{\IeC {\CYRS }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt } $m(T) > M$}{9}% 
+\contentsline {paragraph}{\IeC {\CYRS }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt } $m(T) > M$}{10}% 
 \contentsline {paragraph}{\IeC {\CYRS }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt } $m(T) = M$}{10}% 
-\contentsline {paragraph}{\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{10}% 
-\contentsline {subsection}{\numberline {6.2}\IeC {\CYRA }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyrm }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrs }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt }}{10}% 
+\contentsline {paragraph}{\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{11}% 
+\contentsline {subsection}{\numberline {6.2}\IeC {\CYRA }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyrm }\IeC {\cyra }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrs }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt }}{11}% 
 \contentsline {paragraph}{\IeC {\CYRS }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt } $m(T) > M$}{11}% 
 \contentsline {paragraph}{\IeC {\CYRS }\IeC {\cyrl }\IeC {\cyru }\IeC {\cyrch }\IeC {\cyra }\IeC {\cyrishrt } $m(T) = M$}{11}% 
 \contentsline {paragraph}{\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{11}% 
-\contentsline {subsection}{\numberline {6.3}\IeC {\CYRR }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrr }\IeC {\cyre }\IeC {\cyrsh }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyro }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyrsftsn } \IeC {\cyrz }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrch }\IeC {\cyri } \IeC {\cyri } \IeC {\cyra }\IeC {\cyrl }\IeC {\cyrg }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyrm } \IeC {\cyrr }\IeC {\cyre }\IeC {\cyrsh }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrya }}{11}% 
-\contentsline {part}{II\hspace {1em}\IeC {\CYRP }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyrery } \IeC {\cyrr }\IeC {\cyra }\IeC {\cyrb }\IeC {\cyro }\IeC {\cyrt }\IeC {\cyrery } \IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrm }\IeC {\cyrm }\IeC {\cyrery }}{12}% 
-\contentsline {section}{\numberline {1}\IeC {\CYRZ }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrch }\IeC {\cyra } 1}{12}% 
-\contentsline {section}{\numberline {2}\IeC {\CYRZ }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrch }\IeC {\cyra } 2}{14}% 
+\contentsline {subsection}{\numberline {6.3}\IeC {\CYRR }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyrr }\IeC {\cyre }\IeC {\cyrsh }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyro }\IeC {\cyrs }\IeC {\cyrt }\IeC {\cyrsftsn } \IeC {\cyrz }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrch }\IeC {\cyri } \IeC {\cyri } \IeC {\cyra }\IeC {\cyrl }\IeC {\cyrg }\IeC {\cyro }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrt }\IeC {\cyrm } \IeC {\cyrr }\IeC {\cyre }\IeC {\cyrsh }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyrya }}{12}% 
+\contentsline {part}{II\hspace {1em}\IeC {\CYRP }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrm }\IeC {\cyre }\IeC {\cyrr }\IeC {\cyrery } \IeC {\cyrr }\IeC {\cyra }\IeC {\cyrb }\IeC {\cyro }\IeC {\cyrt }\IeC {\cyrery } \IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrm }\IeC {\cyrm }\IeC {\cyrery }}{13}% 
+\contentsline {section}{\numberline {1}\IeC {\CYRZ }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrch }\IeC {\cyra } 1}{13}% 
+\contentsline {section}{\numberline {2}\IeC {\CYRZ }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrch }\IeC {\cyra } 2}{15}% 

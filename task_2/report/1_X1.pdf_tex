@@ -54,15 +54,18 @@
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{1_X1.pdf}}%
-    \put(0.25000002,0.15){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.19999997\unitlength}\raggedright $l - \epsilon$\end{minipage}}}%
-    \put(0.64984098,0.16145038){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.23349236\unitlength}\raggedright $l + \epsilon$\end{minipage}}}%
-    \put(0.02433206,0.28190204){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.08333334\unitlength}\raggedright $M$\end{minipage}}}%
-    \put(0.01574427,0.58333334){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.1\unitlength}\raggedright $m_0$\end{minipage}}}%
-    \put(0.06574428,0.70807889){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.09999999\unitlength}\raggedright $x_2$\end{minipage}}}%
-    \put(0.92525442,0.18619591){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.10000002\unitlength}\raggedright $x_1$\end{minipage}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{1_X1.pdf}}%
-    \put(0.13476464,0.47239187){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15\unitlength}\raggedright $\psi(T)$\end{minipage}}}%
-    \put(0.46437659,0.23909035){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15\unitlength}\raggedright $\psi(T)$\end{minipage}}}%
-    \put(0.4370229,0.4148537){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.15000003\unitlength}\raggedright $\X_1$\end{minipage}}}%
+    \put(0.69677057,0.43322075){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14641656\unitlength}\raggedright $\psi(T)$\end{minipage}}}%
+    \put(0.74179366,0.21685603){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14641656\unitlength}\raggedright $\psi(T)$\end{minipage}}}%
+    \put(0.47738258,0.21341094){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14641656\unitlength}\raggedright $\psi(T)$\end{minipage}}}%
+    \put(0.13115048,0.43389705){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14641656\unitlength}\raggedright $\psi(T)$\end{minipage}}}%
+    \put(0.10014461,0.21685603){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.14641656\unitlength}\raggedright $\psi(T)$\end{minipage}}}%
+    \put(0.44355605,0.40738251){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.24029541\unitlength}\raggedright $\X_1$\end{minipage}}}%
+    \put(0.89658611,0.13521999){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.09818522\unitlength}\raggedright $x_1$\end{minipage}}}%
+    \put(0.00602892,0.67265489){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.0757921\unitlength}\raggedright \end{minipage}}}%
+    \put(0.03789605,0.66490343){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.09818522\unitlength}\raggedright $x_2$\end{minipage}}}%
+    \put(0.21531845,0.14555528){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.18000626\unitlength}\raggedright $l-\epsilon$\end{minipage}}}%
+    \put(0.63789531,0.14709283){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.23254396\unitlength}\raggedright $l+\epsilon$\end{minipage}}}%
+    \put(0.03100586,0.25579835){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.08095974\unitlength}\raggedright $M$\end{minipage}}}%
+    \put(0.02153185,0.55207654){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.13608127\unitlength}\raggedright $m_0$\end{minipage}}}%
   \end{picture}%
 \endgroup%

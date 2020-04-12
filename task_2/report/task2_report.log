@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.5)  9 APR 2020 18:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.11.5)  12 APR 2020 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -575,92 +575,87 @@ File: 1_X1.pdf Graphic file (type pdf)
 <use 1_X1.pdf, page 1>
 Package pdftex.def Info: 1_X1.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 256.0748pt x 192.06734pt.
-<1_X1.pdf, id=46, page=2, 341.43306pt x 256.0748pt>
-File: 1_X1.pdf Graphic file (type pdf)
-<use 1_X1.pdf, page 2>
-Package pdftex.def Info: 1_X1.pdf , page2 used on input line 63.
-(pdftex.def)             Requested size: 256.0748pt x 192.06734pt.
-) [5 <./1_X1.pdf> <./1_X1.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./1_X1.pdf): PDF inclusion: multiple pd
-fs with page group included in a single page
->]
-Overfull \hbox (29.18321pt too wide) in paragraph at lines 222--224
-[]\T2A/cmr/m/n/10 Из усло-вий транс-вер-саль-но-сти и ви-да мно-же-ства $\OMS/c
-msy/m/n/10 X[]$ \T2A/cmr/m/n/10 сле-ду-ет, что $\OML/cmm/m/it/10  []\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 T\OT1/cmr/m/n/10 ) = 0$ \T2A/cmr/m/n/10 при $\OML/cmm/m/
-it/10 x[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 T\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
-2  \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 M;  m[]\OT1/cmr/m/n/10 )$\T2A/cmr/m/n/10 ,
-
+) [5 <./1_X1.pdf>] [6]
+Overfull \hbox (4.07014pt too wide) in paragraph at lines 312--316
+\T2A/cmr/m/n/10 (этот слу-чай был рас-смот-рен в преды-ду-щем аб-за-це), ли-бо 
+$\OML/cmm/m/it/10  []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 T\OT1/cmr/m/n/10 ) \OML/
+cmm/m/it/10 > \OT1/cmr/m/n/10 0$\T2A/cmr/m/n/10 , и то-гда $\OML/cmm/m/it/10  [
+] > \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ;  F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 T\O
+T1/cmr/m/n/10 ) \OML/cmm/m/it/10 >  \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ;$
  []
 
-[6] [7] (./2_X1.pdf_tex
-<2_X1.pdf, id=67, page=1, 341.43306pt x 256.0748pt>
+[7] (./2_X1.pdf_tex
+<2_X1.pdf, id=83, page=1, 341.43306pt x 256.0748pt>
 File: 2_X1.pdf Graphic file (type pdf)
 <use 2_X1.pdf, page 1>
 Package pdftex.def Info: 2_X1.pdf , page1 used on input line 56.
 (pdftex.def)             Requested size: 256.0748pt x 192.06734pt.
-<2_X1.pdf, id=68, page=2, 341.43306pt x 256.0748pt>
+<2_X1.pdf, id=84, page=2, 341.43306pt x 256.0748pt>
 File: 2_X1.pdf Graphic file (type pdf)
 <use 2_X1.pdf, page 2>
 Package pdftex.def Info: 2_X1.pdf , page2 used on input line 61.
 (pdftex.def)             Requested size: 256.0748pt x 192.06734pt.
-<2_X1.pdf, id=69, page=3, 341.43306pt x 256.0748pt>
+<2_X1.pdf, id=85, page=3, 341.43306pt x 256.0748pt>
 File: 2_X1.pdf Graphic file (type pdf)
 <use 2_X1.pdf, page 3>
 Package pdftex.def Info: 2_X1.pdf , page3 used on input line 63.
 (pdftex.def)             Requested size: 256.0748pt x 192.06734pt.
-<2_X1.pdf, id=70, page=4, 341.43306pt x 256.0748pt>
+<2_X1.pdf, id=86, page=4, 341.43306pt x 256.0748pt>
 File: 2_X1.pdf Graphic file (type pdf)
 <use 2_X1.pdf, page 4>
 Package pdftex.def Info: 2_X1.pdf , page4 used on input line 65.
 (pdftex.def)             Requested size: 256.0748pt x 192.06734pt.
-<2_X1.pdf, id=71, page=5, 341.43306pt x 256.0748pt>
+<2_X1.pdf, id=87, page=5, 341.43306pt x 256.0748pt>
 File: 2_X1.pdf Graphic file (type pdf)
 <use 2_X1.pdf, page 5>
 Package pdftex.def Info: 2_X1.pdf , page5 used on input line 67.
 (pdftex.def)             Requested size: 256.0748pt x 192.06734pt.
-<2_X1.pdf, id=72, page=6, 341.43306pt x 256.0748pt>
+<2_X1.pdf, id=88, page=6, 341.43306pt x 256.0748pt>
 File: 2_X1.pdf Graphic file (type pdf)
 <use 2_X1.pdf, page 6>
 Package pdftex.def Info: 2_X1.pdf , page6 used on input line 69.
 (pdftex.def)             Requested size: 256.0748pt x 192.06734pt.
-) [8 <./2_X1.pdf> <./2_X1.pdf
+)
 
-pdfTeX warning: /usr/bin/pdflatex (file ./2_X1.pdf): PDF inclusion: multiple pd
-fs with page group included in a single page
-> <./2_X1.pdf
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-pdfTeX warning: /usr/bin/pdflatex (file ./2_X1.pdf): PDF inclusion: multiple pd
-fs with page group included in a single page
-> <./2_X1.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./2_X1.pdf): PDF inclusion: multiple pd
-fs with page group included in a single page
-> <./2_X1.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./2_X1.pdf): PDF inclusion: multiple pd
-fs with page group included in a single page
-> <./2_X1.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./2_X1.pdf): PDF inclusion: multiple pd
-fs with page group included in a single page
->]
-Overfull \hbox (13.43445pt too wide) in paragraph at lines 358--359
+[8]
+Overfull \hbox (13.43445pt too wide) in paragraph at lines 387--388
 []\T2A/cmr/m/n/10 Для удоб-ства рас-смат-ри-ва-ем $\OML/cmm/m/it/10  [] > \OT1/
 cmr/m/n/10 0$\T2A/cmr/m/n/10 , за-пи-сы-вая в функ-ци-о-на-ле Гамильтона-Понтря
 гина $\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10  []$\T2A/cmr/m/n/10 . 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 394.
+[9 <./2_X1.pdf> <./2_X1.pdf
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+pdfTeX warning: /usr/bin/pdflatex (file ./2_X1.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+> <./2_X1.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./2_X1.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+> <./2_X1.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./2_X1.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+> <./2_X1.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./2_X1.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+> <./2_X1.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./2_X1.pdf): PDF inclusion: multiple pd
+fs with page group included in a single page
+>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 423.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 394.
- [9] [10]
-Overfull \hbox (7.08865pt too wide) in paragraph at lines 476--481
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 423.
+ [10]
+Overfull \hbox (7.08865pt too wide) in paragraph at lines 505--510
 \T2A/cmr/m/n/10 Задача яв-ля-ет-ся нераз-ре-ши-мой, ес-ли при управ-ле-нии $\OM
 L/cmm/m/it/10 u \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 u[];  t \OMS/cmsy/m/n/10 2 \
 OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ;  ^^\[]\OT1/cmr/m/n/10 ]$ \T2A/cmr/m/n/10 по
@@ -669,14 +664,14 @@ OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ;  ^^\[]\OT1/cmr/m/n/10 ]$ \T2A/cmr/m/n/10 по
  []
 
 
-Overfull \hbox (10.51836pt too wide) in paragraph at lines 476--481
+Overfull \hbox (10.51836pt too wide) in paragraph at lines 505--510
 \T2A/cmr/m/n/10 ным, и по-то-му оп-ти-маль-ным, бу-дет яв-лять-ся опи-сан-ное в
 ы-ше управ-ле-ние $\OML/cmm/m/it/10 u \OT1/cmr/m/n/10 =  \OML/cmm/m/it/10 u[]; 
  t  \OMS/cmsy/m/n/10 2  \OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ;  ^^\[]\OT1/cmr/m/n
 /10 ]$\T2A/cmr/m/n/10 ,
  []
 
-[11]
+[11] [12]
 Package epstopdf Info: Source file: <p1_max.eps>
 (epstopdf)                    date: 2020-04-09 15:13:59
 (epstopdf)                    size: 190378 bytes
@@ -685,20 +680,20 @@ Package epstopdf Info: Source file: <p1_max.eps>
 (epstopdf)                    size: 25386 bytes
 (epstopdf)             Command: <repstopdf --outfile=p1_max-eps-converted-to.pd
 f p1_max.eps>
-(epstopdf)             \includegraphics on input line 505.
+(epstopdf)             \includegraphics on input line 562.
 Package epstopdf Info: Output file is already uptodate.
-<p1_max-eps-converted-to.pdf, id=115, 421.575pt x 316.18124pt>
+<p1_max-eps-converted-to.pdf, id=134, 421.575pt x 316.18124pt>
 File: p1_max-eps-converted-to.pdf Graphic file (type pdf)
 <use p1_max-eps-converted-to.pdf>
-Package pdftex.def Info: p1_max-eps-converted-to.pdf  used on input line 505.
+Package pdftex.def Info: p1_max-eps-converted-to.pdf  used on input line 562.
 (pdftex.def)             Requested size: 455.24408pt x 341.4417pt.
 
-Overfull \hbox (45.65784pt too wide) in paragraph at lines 505--506
+Overfull \hbox (45.65784pt too wide) in paragraph at lines 562--563
 [][] 
  []
 
 
-Overfull \hbox (28.21248pt too wide) in paragraph at lines 507--508
+Overfull \hbox (28.21248pt too wide) in paragraph at lines 564--565
 []\T2A/cmr/m/n/10 В этом слу-чае дви-же-ние про-дол-жа-ет-ся до мо-мен-та $\OML
 /cmm/m/it/10 ^^\[]$\T2A/cmr/m/n/10 . На-бран-ная вы-со-та при этом $\OML/cmm/m/
 it/10 H[]  \OT1/cmr/m/n/10 =  1\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 48$\T2A/cmr/m/
@@ -713,19 +708,19 @@ Package epstopdf Info: Source file: <p1_sw.eps>
 (epstopdf)                    size: 25890 bytes
 (epstopdf)             Command: <repstopdf --outfile=p1_sw-eps-converted-to.pdf
  p1_sw.eps>
-(epstopdf)             \includegraphics on input line 509.
+(epstopdf)             \includegraphics on input line 566.
 Package epstopdf Info: Output file is already uptodate.
-<p1_sw-eps-converted-to.pdf, id=116, 421.575pt x 316.18124pt>
+<p1_sw-eps-converted-to.pdf, id=135, 421.575pt x 316.18124pt>
 File: p1_sw-eps-converted-to.pdf Graphic file (type pdf)
 <use p1_sw-eps-converted-to.pdf>
-Package pdftex.def Info: p1_sw-eps-converted-to.pdf  used on input line 509.
+Package pdftex.def Info: p1_sw-eps-converted-to.pdf  used on input line 566.
 (pdftex.def)             Requested size: 455.24408pt x 341.4417pt.
 
-Overfull \hbox (45.65784pt too wide) in paragraph at lines 509--510
+Overfull \hbox (45.65784pt too wide) in paragraph at lines 566--567
 [][] 
  []
 
-[12 <./p1_max-eps-converted-to.pdf>] [13 <./p1_sw-eps-converted-to.pdf>]
+[13 <./p1_max-eps-converted-to.pdf>] [14 <./p1_sw-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <2F+.eps>
 (epstopdf)                    date: 2020-04-09 14:48:49
 (epstopdf)                    size: 32040 bytes
@@ -734,19 +729,19 @@ Package epstopdf Info: Source file: <2F+.eps>
 (epstopdf)                    size: 7355 bytes
 (epstopdf)             Command: <repstopdf --outfile=2F+-eps-converted-to.pdf 2
 F+.eps>
-(epstopdf)             \includegraphics on input line 521.
+(epstopdf)             \includegraphics on input line 578.
 Package epstopdf Info: Output file is already uptodate.
-<2F+-eps-converted-to.pdf, id=134, 421.575pt x 316.18124pt>
+<2F+-eps-converted-to.pdf, id=153, 421.575pt x 316.18124pt>
 File: 2F+-eps-converted-to.pdf Graphic file (type pdf)
 <use 2F+-eps-converted-to.pdf>
-Package pdftex.def Info: 2F+-eps-converted-to.pdf  used on input line 521.
+Package pdftex.def Info: 2F+-eps-converted-to.pdf  used on input line 578.
 (pdftex.def)             Requested size: 455.24408pt x 341.4417pt.
 
-Overfull \hbox (30.65784pt too wide) in paragraph at lines 520--522
+Overfull \hbox (30.65784pt too wide) in paragraph at lines 577--579
 [] 
  []
 
-[14 <./2F+-eps-converted-to.pdf>]
+[15 <./2F+-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <2F-.eps>
 (epstopdf)                    date: 2020-04-09 15:01:26
 (epstopdf)                    size: 30953 bytes
@@ -755,19 +750,19 @@ Package epstopdf Info: Source file: <2F-.eps>
 (epstopdf)                    size: 7211 bytes
 (epstopdf)             Command: <repstopdf --outfile=2F--eps-converted-to.pdf 2
 F-.eps>
-(epstopdf)             \includegraphics on input line 530.
+(epstopdf)             \includegraphics on input line 587.
 Package epstopdf Info: Output file is already uptodate.
-<2F--eps-converted-to.pdf, id=143, 421.575pt x 316.18124pt>
+<2F--eps-converted-to.pdf, id=162, 421.575pt x 316.18124pt>
 File: 2F--eps-converted-to.pdf Graphic file (type pdf)
 <use 2F--eps-converted-to.pdf>
-Package pdftex.def Info: 2F--eps-converted-to.pdf  used on input line 530.
+Package pdftex.def Info: 2F--eps-converted-to.pdf  used on input line 587.
 (pdftex.def)             Requested size: 455.24408pt x 341.4417pt.
 
-Overfull \hbox (30.65784pt too wide) in paragraph at lines 529--531
+Overfull \hbox (30.65784pt too wide) in paragraph at lines 586--588
 [] 
  []
 
-[15 <./2F--eps-converted-to.pdf>]
+[16 <./2F--eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <2.eps>
 (epstopdf)                    date: 2020-04-09 13:44:18
 (epstopdf)                    size: 28329 bytes
@@ -776,27 +771,27 @@ Package epstopdf Info: Source file: <2.eps>
 (epstopdf)                    size: 6789 bytes
 (epstopdf)             Command: <repstopdf --outfile=2-eps-converted-to.pdf 2.e
 ps>
-(epstopdf)             \includegraphics on input line 540.
+(epstopdf)             \includegraphics on input line 597.
 Package epstopdf Info: Output file is already uptodate.
-<2-eps-converted-to.pdf, id=152, 421.575pt x 316.18124pt>
+<2-eps-converted-to.pdf, id=171, 421.575pt x 316.18124pt>
 File: 2-eps-converted-to.pdf Graphic file (type pdf)
 <use 2-eps-converted-to.pdf>
-Package pdftex.def Info: 2-eps-converted-to.pdf  used on input line 540.
+Package pdftex.def Info: 2-eps-converted-to.pdf  used on input line 597.
 (pdftex.def)             Requested size: 455.24408pt x 341.4417pt.
 
-Overfull \hbox (30.65784pt too wide) in paragraph at lines 539--541
+Overfull \hbox (30.65784pt too wide) in paragraph at lines 596--598
 [] 
  []
 
 
-Overfull \hbox (5.07039pt too wide) in paragraph at lines 542--543
+Overfull \hbox (5.07039pt too wide) in paragraph at lines 599--600
 []\T2A/cmr/m/n/10 В этом при-ме-ре дви-же-ние про-ис-хо-дит по сце-на-рию II. З
 на-че-ние функ-ци-о-на-ла $\OML/cmm/m/it/10 J\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 
 u[]\OT1/cmr/m/n/10 )  =  0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 12$\T2A/cmr/m/n/10 
 . 
  []
 
-[16 <./2-eps-converted-to.pdf>]
+[17 <./2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <23.eps>
 (epstopdf)                    date: 2020-04-09 14:10:09
 (epstopdf)                    size: 35943 bytes
@@ -805,27 +800,27 @@ Package epstopdf Info: Source file: <23.eps>
 (epstopdf)                    size: 7799 bytes
 (epstopdf)             Command: <repstopdf --outfile=23-eps-converted-to.pdf 23
 .eps>
-(epstopdf)             \includegraphics on input line 548.
+(epstopdf)             \includegraphics on input line 604.
 Package epstopdf Info: Output file is already uptodate.
-<23-eps-converted-to.pdf, id=161, 421.575pt x 316.18124pt>
+<23-eps-converted-to.pdf, id=180, 421.575pt x 316.18124pt>
 File: 23-eps-converted-to.pdf Graphic file (type pdf)
 <use 23-eps-converted-to.pdf>
-Package pdftex.def Info: 23-eps-converted-to.pdf  used on input line 548.
+Package pdftex.def Info: 23-eps-converted-to.pdf  used on input line 604.
 (pdftex.def)             Requested size: 455.24408pt x 341.4417pt.
 
-Overfull \hbox (30.65784pt too wide) in paragraph at lines 547--551
+Overfull \hbox (30.65784pt too wide) in paragraph at lines 603--607
 []
  []
 
 
-Overfull \hbox (4.78902pt too wide) in paragraph at lines 547--551
+Overfull \hbox (4.78902pt too wide) in paragraph at lines 603--607
 \T2A/cmr/m/n/10 В этом при-ме-ре дви-же-ние про-ис-хо-дит по сце-на-рию II-III.
  Зна-че-ние функ-ци-о-на-ла $\OML/cmm/m/it/10 J\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
 0 u[]\OT1/cmr/m/n/10 )  =  0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 26$\T2A/cmr/m/n/1
 0 ,
  []
 
-[17 <./23-eps-converted-to.pdf>]
+[18 <./23-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <13.eps>
 (epstopdf)                    date: 2020-04-09 14:06:25
 (epstopdf)                    size: 159000 bytes
@@ -834,28 +829,28 @@ Package epstopdf Info: Source file: <13.eps>
 (epstopdf)                    size: 25216 bytes
 (epstopdf)             Command: <repstopdf --outfile=13-eps-converted-to.pdf 13
 .eps>
-(epstopdf)             \includegraphics on input line 555.
+(epstopdf)             \includegraphics on input line 611.
 Package epstopdf Info: Output file is already uptodate.
-<13-eps-converted-to.pdf, id=170, 421.575pt x 316.18124pt>
+<13-eps-converted-to.pdf, id=189, 421.575pt x 316.18124pt>
 File: 13-eps-converted-to.pdf Graphic file (type pdf)
 <use 13-eps-converted-to.pdf>
-Package pdftex.def Info: 13-eps-converted-to.pdf  used on input line 555.
+Package pdftex.def Info: 13-eps-converted-to.pdf  used on input line 611.
 (pdftex.def)             Requested size: 455.24408pt x 341.4417pt.
 
-Overfull \hbox (33.43494pt too wide) in paragraph at lines 554--557
+Overfull \hbox (33.43494pt too wide) in paragraph at lines 610--613
 []\T2A/cmr/m/n/10 .
  []
 
-[18 <./13-eps-converted-to.pdf>] [19] (./task2_report.aux)
+[19 <./13-eps-converted-to.pdf>] [20] (./task2_report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5171 strings out of 492615
- 68921 string characters out of 6131390
- 153583 words of memory out of 5000000
- 8931 multiletter control sequences out of 15000+600000
+ 5170 strings out of 492615
+ 68861 string characters out of 6131390
+ 153596 words of memory out of 5000000
+ 8930 multiletter control sequences out of 15000+600000
  19332 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,39p,868b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -882,10 +877,10 @@ ic/cm-super/sfcc1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700
 mf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/publi
 c/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.
 pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on task2_report.pdf (19 pages, 450925 bytes).
+Output written on task2_report.pdf (20 pages, 460858 bytes).
 PDF statistics:
- 266 PDF objects out of 1000 (max. 8388607)
- 177 compressed objects within 2 object streams
+ 285 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
